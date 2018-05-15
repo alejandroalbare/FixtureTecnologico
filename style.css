@@ -14,7 +14,6 @@ body {background-position: center;}
 
 .header {
  background-color: rgb(213, 43, 30);
- height: 65px;
 }
 
 .img {
@@ -28,7 +27,7 @@ body {background-position: center;}
  -webkit-border-radius: 20px 20px 20px 20px;
  align-items: center;
  border-radius: 20px 20px 20px 20px;
- display: flex; /*border: 2px solid #000000;*/
+ display: flex;
  height: 40px;
  justify-content: center;
  margin-top: 22px;
