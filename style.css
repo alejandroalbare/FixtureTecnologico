@@ -93,7 +93,7 @@ text-align: center;
   cursor: pointer;
 }
 .tituloGrupo:hover{
-text-shadow: 0.1em 0.1em rgb(213, 43, 30);
+text-shadow: 0.1em 0.1em 0.2em #952e4b;
 }
 #nuevoDiv{
   margin-bottom: 10px;
