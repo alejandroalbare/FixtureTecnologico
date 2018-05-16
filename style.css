@@ -71,13 +71,13 @@ span:hover {
 
 #mainTres {background-color: rgb(250, 6, 242);}
 
-.grupos{
-  margin-left: 105px;
-}
 .bordes{
   border: 2px solid black;
 }
 
 .centrado{
    text-align: center;
+}
+.grupo{
+  margin-bottom: 45px;
 }
