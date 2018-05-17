@@ -39,7 +39,7 @@ $("#b3").click(function() {
 
 function vaciarDiv(){
   for(var i = 0; i < 9; i++){
-    $("#nuevoDiv"+i).remove(); 
+    $("#nuevoDiv"+i).remove();
   }
 }
 function crearEnfrentamientos(idgrupo,numeroIdDiv) {
@@ -77,7 +77,7 @@ $("#"+idDiv).toggleClass("bordesRedondos");
 
   $("html, body").animate({
     scrollTop: $("#enfrentamientos").offset().top
-  }, 1000); .
+  }, 1000);
 
 }
 function crearTodosLosEnfrentamientos(){
