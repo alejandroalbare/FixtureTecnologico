@@ -33,17 +33,22 @@ $("#b3").click(function() {
   $("#s1").removeClass("changeColor");
   $("#s2").removeClass("changeColor");
   $("html, body").animate({
-    scrollTop: $('#equipos').offset().top
+    scrollTop: $('#enfrentamientos').offset().top
   }, 1000);
 });
 
-function crearEnfrentamientos(idgrupo) {
-  $("#nuevoDiv").remove();
+function vaciarDiv(){
+  for(var i = 0; i < 9; i++){
+    $("#nuevoDiv"+i).remove(); 
+  }
+}
+function crearEnfrentamientos(idgrupo,numeroIdDiv) {
+
   var grupo = document.getElementById(idgrupo);
-  var pais1 = grupo.rows[0].cells[1].innerText
-  var pais2 = grupo.rows[1].cells[1].innerText
-  var pais3 = grupo.rows[2].cells[1].innerText
-  var pais4 = grupo.rows[3].cells[1].innerText
+  var pais1 = grupo.rows[0].cells[1].innerText;
+  var pais2 = grupo.rows[1].cells[1].innerText;
+  var pais3 = grupo.rows[2].cells[1].innerText;
+  var pais4 = grupo.rows[3].cells[1].innerText;
 
   var vs1 = pais1 + " vs " + pais2;
   var vs2 = pais1 + " vs " + pais3;
@@ -53,22 +58,32 @@ function crearEnfrentamientos(idgrupo) {
   var vs6 = pais2 + " vs " + pais4;
 
   var listaVs = [vs1, vs2, vs3, vs4, vs5, vs6];
-
+  var idDiv = "nuevoDiv"+numeroIdDiv;
   var enfrentamientos = document.getElementById("enfrentamientos");
   $("#enfrentamientos").append($('<div/>', {
     'class' : 'col-12',
-    'id' : 'nuevoDiv'
+    'id' : idDiv
   }));
-$("#nuevoDiv").toggleClass("bordesRedondos");
+$("#"+idDiv).toggleClass("bordesRedondos");
+
   listaVs.forEach(function(vs) {
     var p = document.createElement("p");
     $(p).toggleClass("enfrentamientos");
     p.innerHTML = vs;
-    document.getElementById("nuevoDiv").appendChild(p);
+    document.getElementById(idDiv).appendChild(p);
   });
-  enfrentamientos.appendChild(document.getElementById("nuevoDiv"));
-  $("html, body").animate({
-    scrollTop: $('#nuevoDiv').offset().top
-  }, 1000);
 
+  enfrentamientos.appendChild(document.getElementById(idDiv));
+
+  $("html, body").animate({
+    scrollTop: $("#enfrentamientos").offset().top
+  }, 1000); .
+
+}
+function crearTodosLosEnfrentamientos(){
+  var listaIdGrupos = ['grupoA','grupoB','grupoC','grupoD','grupoE','grupoF','grupoG','grupoH'];
+
+  for (var i = 0; i < listaIdGrupos.length; i++){
+    crearEnfrentamientos(listaIdGrupos[i],i);
+  }
 }
