@@ -1,6 +1,10 @@
 
 body {background-position: center;}
 
+.containter {}
+
+.row {margin-right: 0px!important;}
+
 .viewportSize100{height: 100vh;}
 
 .vh25{
@@ -10,6 +14,7 @@ body {background-position: center;}
 
 .header {
  background-color: rgb(213, 43, 30);
+ height: 65px;
 }
 
 .img {
@@ -17,16 +22,13 @@ body {background-position: center;}
  display: flex;
  justify-content: center;
 }
-.bordesRedondos{
-    border: 2px solid black;
-  border-radius: 20px 20px 20px 20px;
-  -moz-border-radius: 20px 20px 20px 20px;
-  -webkit-border-radius: 20px 20px 20px 20px;
-}
 
 .boton {
+ -moz-border-radius: 20px 20px 20px 20px;
+ -webkit-border-radius: 20px 20px 20px 20px;
  align-items: center;
- display: flex;
+ border-radius: 20px 20px 20px 20px;
+ display: flex; /*border: 2px solid #000000;*/
  height: 40px;
  justify-content: center;
  margin-top: 22px;
@@ -70,27 +72,13 @@ span:hover {
 
 #mainTres {background-color: rgb(250, 6, 242);}
 
+.grupos{
+  margin-left: 105px;
+}
 .bordes{
   border: 2px solid black;
 }
 
 .centrado{
    text-align: center;
-}
-.grupo{
-  margin-bottom: 45px;
-}
-
-.enfrentamientos{
-font-family: 'Kavivanar', cursive;
-text-align: center;
-}
-.tituloGrupo{
-  cursor: pointer;
-}
-.tituloGrupo:hover{
-text-shadow: 0.1em 0.1em 0.2em #952e4b;
-}
-#nuevoDiv{
-  margin-bottom: 10px;
 }
