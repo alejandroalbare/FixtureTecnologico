@@ -1,10 +1,6 @@
 
 body {background-position: center;}
 
-.containter {}
-
-.row {margin-right: 0px!important;}
-
 .viewportSize100{height: 100vh;}
 
 .vh25{
@@ -74,6 +70,9 @@ span:hover {
 
 #mainTres {background-color: rgb(250, 6, 242);}
 
+.grupos{
+  margin-left: 105px;
+}
 .bordes{
   border: 2px solid black;
 }
