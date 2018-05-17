@@ -1,2 +1,0 @@
-# FixtureTecnologico
-fixiture del mundial 
