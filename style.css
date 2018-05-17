@@ -1,0 +1,100 @@
+
+body {background-position: center;}
+
+.containter {}
+
+.row {margin-right: 0px!important;}
+
+.viewportSize100{height: 100vh;}
+
+.vh25{
+  height: 25vh;
+  margin-top: 10px;
+}
+
+.header {
+ background-color: rgb(213, 43, 30);
+}
+
+.img {
+ align-items: center;
+ display: flex;
+ justify-content: center;
+}
+.bordesRedondos{
+    border: 2px solid black;
+  border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.boton {
+ align-items: center;
+ display: flex;
+ height: 40px;
+ justify-content: center;
+ margin-top: 22px;
+ padding-left: 42px;
+ text-align: center;
+}
+
+span {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+span:hover {
+ color: #952e4b;
+ transition: 0.7s;
+}
+
+.changeColor {
+ background-color: rgb(253, 255, 214);
+ color: #952e4b;
+}
+
+.fullHeigth {height: 100%;}
+
+.50viewport{
+  height: 50vh;
+}
+
+.rowDosInt1{height: 60vh;}
+
+.rowDosInt2{height: 40vh;}
+
+.rowTresInt{
+  height: 22vh;
+  margin: 10px;
+}
+
+#mainUno {background-color: rgb(253, 255, 214);}
+
+#mainDos {background-color: rgb(87, 32, 199);}
+
+#mainTres {background-color: rgb(250, 6, 242);}
+
+.bordes{
+  border: 2px solid black;
+}
+
+.centrado{
+   text-align: center;
+}
+.grupo{
+  margin-bottom: 45px;
+}
+
+.enfrentamientos{
+font-family: 'Kavivanar', cursive;
+text-align: center;
+}
+.tituloGrupo{
+  cursor: pointer;
+}
+.tituloGrupo:hover{
+text-shadow: 0.1em 0.1em 0.2em #952e4b;
+}
+#nuevoDiv{
+  margin-bottom: 10px;
+}
