@@ -61,11 +61,9 @@ function crearEnfrentamientos(idgrupo,numeroIdDiv) {
   var idDiv = "nuevoDiv"+numeroIdDiv;  // Variable que va a ser la id del div que se creará.
   var enfrentamientos = document.getElementById("enfrentamientos"); //Se guarda en una variable el div en el cual se van a insertar los enfrentamientos.
   $("#enfrentamientos").append($('<div/>', { // Se inserta dentro del div "enfrentamientos", otro div.
-    'class' : 'col-12',
+    'class' : 'col-12 espacio bordesRedondos',
     'id' : idDiv
   }));
-$("#"+idDiv).toggleClass("bordesRedondos"); //Al último div creado se le agrega una clase para redondear los bordes.
-
   listaVs.forEach(function(vs) { // Este foreach recorre la lista donde estan los Strings y los va
     var p = document.createElement("p"); //Crea un elemento P.
     $(p).toggleClass("enfrentamientos"); //Le agrega al P creado, la clase enfrentamiento de css.
