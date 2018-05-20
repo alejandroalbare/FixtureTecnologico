@@ -95,3 +95,11 @@ text-shadow: 0.1em 0.1em 0.2em #952e4b;
 #nuevoDiv{
   margin-bottom: 10px;
 }
+.letra{
+
+      font-family: "dusha_plusregular";
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -o-font-smoothing: antialiased;
+
+}

@@ -42,6 +42,11 @@ function vaciarDiv(){
     $("#nuevoDiv"+i).remove();
   }
 }
+function irAEnfrentamientos(){
+  $("html, body").animate({
+    scrollTop: $("#enfrentamientos").offset().top
+  }, 1000);
+}
 function crearEnfrentamientos(idgrupo,numeroIdDiv) {
 
   var grupo = document.getElementById(idgrupo);
@@ -75,10 +80,6 @@ $("#"+idDiv).toggleClass("bordesRedondos");
 
   enfrentamientos.appendChild(document.getElementById(idDiv));
 
-  $("html, body").animate({
-    scrollTop: $("#enfrentamientos").offset().top
-  }, 1000);
-
 }
 function crearTodosLosEnfrentamientos(){
   var listaIdGrupos = ['grupoA','grupoB','grupoC','grupoD','grupoE','grupoF','grupoG','grupoH'];
@@ -86,4 +87,5 @@ function crearTodosLosEnfrentamientos(){
   for (var i = 0; i < listaIdGrupos.length; i++){
     crearEnfrentamientos(listaIdGrupos[i],i);
   }
+  irAEnfrentamientos();
 }
