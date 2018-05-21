@@ -90,8 +90,8 @@ body {background-position: center;}
 #enfrentamientos{
 text-align: center;
 font-family: 'Baloo Chettan', cursive; /*puse de ejemplo este tipo de letra*/
-margin-bottom: 45px;
 }
+
 .tituloGrupo{
   cursor: pointer;
 }
@@ -108,4 +108,12 @@ text-shadow: 0.1em 0.1em 0.2em #952e4b;
 .lindo{
   font-family: 'Baloo Chettan', cursive;
   font-size: 23px;
+}
+
+.margen{
+  margin-bottom: 45px;
+}
+
+.col-3.lindo{
+  font-size: 20px;
 }
