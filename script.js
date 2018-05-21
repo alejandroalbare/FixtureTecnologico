@@ -75,9 +75,11 @@ function prueba(){
   if(resultadoUruguay < resultadoRusia){
     grupo.rows[0].cells[2].innerHTML = parseInt(grupo.rows[0].cells[2].innerText)+3;
     grupo.rows[0].cells[4].innerHTML = parseInt(grupo.rows[0].cells[4].innerText)+1;
+    grupo.rows[3].cells[6].innerHTML = parseInt(grupo.rows[3].cells[6].innerText)+1;
   }else if (resultadoRusia < resultadoUruguay) {
     grupo.rows[3].cells[2].innerHTML = parseInt(grupo.rows[3].cells[2].innerText)+3;
     grupo.rows[3].cells[4].innerHTML = parseInt(grupo.rows[3].cells[4].innerText)+1;
+    grupo.rows[0].cells[6].innerHTML = parseInt(grupo.rows[0].cells[6].innerText)+1;
   }else if (resultadoRusia === resultadoUruguay) {
     grupo.rows[0].cells[2].innerHTML =  parseInt(grupo.rows[0].cells[2].innerText)+1;
     grupo.rows[3].cells[2].innerHTML =  parseInt(grupo.rows[3].cells[2].innerText)+1;
