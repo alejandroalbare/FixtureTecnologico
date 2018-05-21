@@ -53,9 +53,9 @@ body {background-position: center;}
 
 .fullHeigth {height: 100%;}
 
-.50viewport{
+/*.50viewport{
   height: 50vh;
-}
+}hay que arreglar esto que no se porque da error*/
 
 .rowDosInt1{height: 60vh;}
 
@@ -87,9 +87,10 @@ body {background-position: center;}
   transition: 0.2s;
 }
 
-.enfrentamientos{
-font-family: 'Kavivanar', cursive;
+#enfrentamientos{
 text-align: center;
+font-family: 'Baloo Chettan', cursive; /*puse de ejemplo este tipo de letra*/
+margin-bottom: 45px;
 }
 .tituloGrupo{
   cursor: pointer;
@@ -102,4 +103,9 @@ text-shadow: 0.1em 0.1em 0.2em #952e4b;
 }
 .espacio{
   margin-bottom: 45px;
+}
+
+.lindo{
+  font-family: 'Baloo Chettan', cursive;
+  font-size: 23px;
 }
