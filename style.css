@@ -3,10 +3,10 @@ body {background-position: center;}
 
 .viewportSize100{height: 100vh;}
 
-.vh25{
+/*.vh25{
   height: 25vh;
   margin-top: 10px;
-}
+}No se está usando*/
 
 .header {
  background-color: rgb(213, 43, 30);
@@ -24,6 +24,7 @@ body {background-position: center;}
   -webkit-border-radius: 20px 20px 20px 20px;
 }
 
+
 .boton {
  align-items: center;
  display: flex;
@@ -38,15 +39,15 @@ body {background-position: center;}
   margin-left: 40px;
 }
 .nav-link:hover {
-  color: #952e4b;
+  opacity: .6;
   transition: 0.7s;
+
 }
 .nav-link{
   font-family: 'Raleway', sans-serif;
   color: white!important;
 }
 .changeColor {
- background-color: rgb(253, 255, 214);
  color: #952e4b;
 }
 
@@ -80,6 +81,10 @@ body {background-position: center;}
 }
 .grupo{
   margin-bottom: 45px;
+}
+.grupo:hover{
+  box-shadow: 5px 5px 3px 1px #999;
+  transition: 0.2s;
 }
 
 .enfrentamientos{
