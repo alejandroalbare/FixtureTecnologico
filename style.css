@@ -35,14 +35,22 @@ body {background-position: center;}
  padding-left: 42px;
  text-align: center;
 }
-
-.navbar-nav{
-  margin-left: 40px;
+.collapse.navbar-collapse.row{
+  margin-left: 30px;
 }
 .nav-link:hover {
   opacity: .6;
   transition: 0.7s;
 
+}
+@font-face {
+  font-family: "dusha_plusregular";
+  src: local('dusha-regular'),
+  url(dusha-regular.woff) format('woff');
+}
+h1{
+  font-family: "dusha_plusregular"!important;
+  color: white!important;
 }
 .nav-link{
   font-family: 'Raleway', sans-serif;
@@ -120,5 +128,5 @@ text-shadow: 0.1em 0.1em 0.2em #952e4b;
 }
 
 .imgn{
-  width: 70px;
+    width: 96px;
 }
