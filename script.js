@@ -86,7 +86,9 @@ function prueba(){
     grupo.rows[0].cells[5].innerHTML = parseInt(grupo.rows[0].cells[5].innerText)+1;
     grupo.rows[3].cells[5].innerHTML = parseInt(grupo.rows[3].cells[5].innerText)+1;
   }
-
+  $("html, body").animate({
+    scrollTop: $("#grupoA").offset().top
+  }, 1000);
 }
 var partidosJSON = {
   "partido1": {
