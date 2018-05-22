@@ -9,7 +9,8 @@ body {background-position: center;}
 }No se está usando*/
 
 .header {
- background-color: rgb(213, 43, 30);
+  background-image: url("Imagenes/img1.jpg");
+ /*background-color: rgb(213, 43, 30);*/
 }
 
 .img {
@@ -116,4 +117,8 @@ text-shadow: 0.1em 0.1em 0.2em #952e4b;
 
 .col-3.lindo{
   font-size: 20px;
+}
+
+.imgn{
+  width: 70px;
 }
